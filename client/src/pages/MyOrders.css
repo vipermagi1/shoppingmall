@@ -1,0 +1,154 @@
+.my-orders {
+  padding: 2rem 0;
+}
+
+.my-orders h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.loading,
+.error,
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.empty-state p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.order-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: box-shadow 0.3s;
+}
+
+.order-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.order-info h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.order-date {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-pending {
+  background-color: #f39c12;
+  color: white;
+}
+
+.status-processing {
+  background-color: #3498db;
+  color: white;
+}
+
+.status-shipped {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.status-delivered {
+  background-color: #27ae60;
+  color: white;
+}
+
+.status-cancelled {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.order-items-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.order-item-preview {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.preview-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.preview-name {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.preview-quantity {
+  color: #7f8c8d;
+}
+
+.more-items {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-total {
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.order-total strong {
+  color: #e74c3c;
+  font-size: 1.2rem;
+}

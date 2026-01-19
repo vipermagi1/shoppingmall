@@ -1,0 +1,135 @@
+.products {
+  padding: 3rem 1rem;
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.products-header h1 {
+  color: #000000;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.loading,
+.error,
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 0;
+  overflow: hidden;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  opacity: 0.8;
+}
+
+.product-image {
+  width: 100%;
+  height: 320px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-image {
+  color: #95a5a6;
+  font-size: 0.9rem;
+}
+
+.product-info {
+  padding: 1rem 0;
+}
+
+.product-info h3 {
+  color: #000000;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.product-description {
+  color: #666666;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.product-category {
+  background-color: transparent;
+  color: #666666;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.product-stock {
+  color: #999999;
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.product-actions .btn-action {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
