@@ -8,7 +8,8 @@
     "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "node scripts/seedProducts.js",
-    "clean:no-images": "node scripts/deleteProductsWithoutImages.js"
+    "clean:no-images": "node scripts/deleteProductsWithoutImages.js",
+    "migrate": "node scripts/migrateToAtlas.js"
   },
   "engines": {
     "node": "18.x",
