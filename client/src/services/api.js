@@ -2,6 +2,11 @@ import axios from 'axios';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
+// 디버깅: 실제 사용되는 API URL 확인
+console.log('🔍 API_URL:', API_URL);
+console.log('🔍 VITE_API_URL env:', import.meta.env.VITE_API_URL);
+console.log('🔍 import.meta.env:', import.meta.env);
+
 const api = axios.create({
   baseURL: API_URL,
   headers: {
